@@ -1,0 +1,27 @@
+1.再次修改文件，并添加提交
+2.使用命令查看之前修改的内容：
+                  git log                                     #或使用git log --pretty=oneline查看简单信息
+3.使用git log命令看到的commit:(数字)是commit的id              #commit id 是使用16进制保存的
+4.在Git中，HEAD表示当前的版本，回退上一版本就是HEAD^,上上版本HEAD^^，前100个版本，HEAD~100
+5.回退到上一版本使用命令：
+				  git reset --hard HEAD^
+6。查看文件版本内容：
+				  cat <文件名>                                #如 cat readme.txt
+7.再次查看版本库状态：                                        #git log
+8.HEAD指针的状态：
+                  Git在内部有个指向当前版本的HEAD指针，当你回退版本的时候，Git仅仅是把HEAD从指向当前文件转向上一个版本
+9.使用命令查看你过去的操作，寻找commit id 来回退版本：
+                  git reflog                                  
+		
+		
+		
+		
+总结：
+ 
+
+
+HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset --hard commit_id。
+
+穿梭前，用git log可以查看提交历史，以便确定要回退到哪个版本。
+
+要重返未来，用git reflog查看命令历史，以便确定要回到未来的哪个版本

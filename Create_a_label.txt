@@ -1,0 +1,27 @@
+1.在Git中打标签非常简单，首先，切换到需要打标签的分支上：
+                             git branch                           #查看当前分支
+							 git checkout master                  #转换到master分支
+2.然后，敲命令就可以打一个新标签：
+                            git tag <name>                        #如git tag v1.0
+							
+							
+							
+3.使用命令查看当前标签：
+                            git tag                               #查看所有标签
+4.默认标签是打在最新提交的commit上，有时候，如果忘了打标签，比如，现在已经是周五了，但应该在周一打的标签没有打
+方法是找到历史提交的commit id，然后打上就可以了：
+                            git log --pretty=oneline --abbrev-commit           #查看历史提交，记下地址
+							git tag v0.9 <6224937>                             #<>处输入地址
+							
+							
+5.还可以创建带有说明的标签，用-a指定标签名，-m指定说明文字:
+                            git tag -a v0.1 -m "version 0.1 released" 3628164  # -a后标签名，-m后说明
+6.用命令git show <tagname>可以看到说明文字：
+                            git show v0.1                                      #查看说明文字
+							
+							
+7.总结
+命令git tag <name>用于新建一个标签，默认为HEAD，也可以指定一个commit id；
+git tag -a <tagname> -m "blablabla..."可以指定标签信息；
+git tag -s <tagname> -m "blablabla..."可以用PGP签名标签；
+命令git tag可以查看所有标签。

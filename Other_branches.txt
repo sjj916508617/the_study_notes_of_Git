@@ -1,0 +1,12 @@
+1.假定现在你需要添加一个新的功能，所以你现在添加一个新的分支如：
+                         git checkout -b feature-vulcan                    #添加功能为Vulcan的fezture分支
+2.开发完成后提交并查看：
+                         git add vulcan.py                                 #添加Vulcan
+                         git status                                        #查看版本库状态
+						 git commit -m "add feature vulcan"                #提交vulcan
+3.切换回dev准备合并
+4.但此时，这一功能忽然要求取消，使用命令删除：
+                         git branch -d feature-vulcan                      #普通删除分支
+5.普通删除失败，需要强制删除：
+                         git branch -D feature-vulcan                      #强制删除分支
+						 

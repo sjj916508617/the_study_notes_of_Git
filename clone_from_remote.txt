@@ -1,0 +1,4 @@
+1.登陆GitHub，创建一个新的仓库，勾选Initialize this repository with a README，这样GitHub会自动为我们创建一个README.md文件。创建完毕后，可以看到README.md文件
+2.下一步是用命令git clone克隆一个本地库：
+                      git clone git@github.com:<michaelliao/gitskills.git>                             #<>部分使用你自己的地址，且不包括< >
+3.

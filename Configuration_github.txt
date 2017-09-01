@@ -1,0 +1,8 @@
+1.注册github账号
+2.创建SSH Key ：
+使用命令创建.ssh文件夹:
+                ssh-keygen -t rsa -C "youremail@example.com"                          #输入你的email地址
+3.可以在用户主目录里找到.ssh目录，里面有id_rsa和id_rsa.pub两个文件，这两个就是SSH Key的秘钥对，id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥
+4.登陆GitHub，打开“Account settings”，“SSH Keys”页面：
+然后，点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容。
+

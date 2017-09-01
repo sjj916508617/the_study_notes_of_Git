@@ -1,0 +1,11 @@
+1.参与一个开源项目
+如人气极高的bootstrap项目，这是一个非常强大的CSS框架，你可以访问它的项目主页https://github.com/twbs/bootstrap，
+点“Fork”就在自己的账号下克隆了一个bootstrap仓库，然后，使用命令从自己的账号下clone：
+                           git clone git@github.com:michaelliao/bootstrap.git                      #克隆仓库
+2.从自己的账号下clone仓库，这样你才能推送修改
+
+3.在GitHub上发起一个pull request
+总结;
+在GitHub上，可以任意Fork开源仓库；
+自己拥有Fork后的仓库的读写权限；
+可以推送pull request给官方仓库来贡献代
